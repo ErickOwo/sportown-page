@@ -19,16 +19,17 @@ export default function Home() {
       </Head>
 
       <main>
-        <section className='bg-[url("../assets/images/bg-banner.webp")] w-full min-h-screen bg-[length:100%_100%] bg-fixed relative'>
+        <section className='bg-[url("../assets/images/bg-banner.webp")] w-full min-h-screen md:bg-[length:100%_100%] bg-[length:200%_100%] bg-fixed relative bg-center'>
           <div className="bg-gradient-to-r from-blue-800 to-red-600 w-full min-h-screen opacity-80"></div>
-          <div className="absolute w-full min-h-screen flex justify-center items-center top-0 left-0 text-4xl flex-col text-white divide-y-2 gap-4">
-            <h4 className="text-8xl font-bold">Zona cross</h4>
+          <div className="absolute w-full min-h-screen flex justify-center items-center top-0 left-0 md:text-4xl flex-col text-white gap-4">
+            <h4 className="md:text-8xl text-5xl font-bold">Zona cross</h4>
+            <div className='w-full max-w-[260px] border border-white'></div>
             <span className="max-w-[500px] text-center pt-4">Le enseñaremos como levantar y como armar burpees</span>
           </div>
         </section>
-        <section className='bg-[url("../assets/images/bg-section.jpg")] w-full min-h-screen bg-[length:100%_100%]'>
-          <div className="min-h-screen w-full bg-blue-800/50 flex">
-            <div className=" min-h-screen flex justify-center items-center gap-3 w-11/12 m-auto">
+        <section className='bg-[url("../assets/images/bg-section.jpg")] w-full min-h-screen md:bg-[length:100%_100%] bg-[length:400%_100%] bg-center'>
+          <div className="min-h-screen w-full bg-blue-800/50 flex p-4">
+            <div className=" min-h-screen flex flex-wrap md:flex-nowrap justify-center items-center gap-3 w-11/12 m-auto">
               <div className="h-[380px] bg-red-500 hover:bg-red-500/80 transition-colors grow-1 shrink-1 w-full flex flex-col justify-center items-center gap-16 ">
                 <h3 className="text-white text-4xl font-bold">Yoga</h3>
                 <button className="bg-black text-white py-2 px-4 rounded-md">Unirse</button>
@@ -48,16 +49,16 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="flex bg-blue-800 w-full min-h-screen">
-          <div className='w-full flex bg-[url("../assets/images/dieta.png")] bg-[length:100%_100%]'>
-            <div className="w-full flex flex-col bg-black/70 justify-center items-center text-white">
-              <h3 className="text-6xl font-bold max-w-min text-center">Alimentarse Sano</h3>
+        <section className="flex flex-wrap md:flex-nowrap bg-blue-800 w-full min-h-screen">
+          <div className='w-full flex bg-[url("../assets/images/dieta.png")] md:bg-[length:100%_100%] bg-[length:320%_100%] min-h-screen'>
+            <div className="w-full flex flex-col bg-black/70 justify-center items-center text-white p-4">
+              <h3 className="md:text-6xl text-4xl font-bold max-w-min text-center">Alimentarse Sano</h3>
               <div className="border border-orange-400 w-24 mt-8"></div>
             </div>
           </div>
-          <div className="w-full py-28 px-10">
-            <h4 className="text-white text-4xl font-bold">Tips alimenticios</h4>
-            <ol className="list-decimal pl-6 mt-6 flex flex-col text-white text-2xl gap-4">
+          <div className="w-full md:py-28 md:px-10 p-5">
+            <h4 className="text-white md:text-4xl text-3xl text-center font-bold">Tips alimenticios</h4>
+            <ol className="list-decimal pl-6 mt-6 flex flex-col text-white md:text-2xl text-md gap-4">
               <li>Come mucha fruta y verdura</li>
               <li>Elige granos integrales en vez de granos refinados</li>
               <li>Sustituye grasas saturadas con las insaturadas</li>
@@ -71,12 +72,12 @@ export default function Home() {
             </ol>
           </div>
         </section>
-        <section className='flex bg-[url("../assets/images/bg-entrenadores.jpg")] bg-[length:100%_100%] w-full min-h-screen'>
-          <div className="w-full min-h-screen bg-black/80 flex flex-col p-24 items-center">
-            <h2 className="text-6xl mb-8 text-white">Nuestros Entrenadores</h2>
-            <span className="border border-red-600 w-[125px] mb-28"></span>
-            <div className="grid gap-6 grid-cols-4">
-              <div className="w-full bg-red-600 h-[560px]">
+        <section className='flex bg-[url("../assets/images/bg-entrenadores.jpg")] md:bg-[length:100%_100%] bg-[length:520%_100%] w-full min-h-screen'>
+          <div className="w-full min-h-screen bg-black/80 flex flex-col p-10 md:p-24 items-center">
+            <h2 className="md:text-6xl text-4xl mb-8 text-white">Nuestros Entrenadores</h2>
+            <span className="border border-red-600 w-[125px] md:mb-28 mb-16"></span>
+            <div className="grid gap-6 md:grid-cols-4 grid-cols-1 ">
+              <div className="w-full bg-red-600 md:h-[560px]">
                 <div>
                   <Image src={entrenador1} width="300px" height="460px" />
                 </div>
@@ -131,7 +132,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='flex bg-[url("../assets/images/bg-membresia.jpg")] bg-[length:100%_100%] w-full min-h-screen text-white text-5xl font-bold'>
+        <section className='flex flex-wrap md:flex-nowrap bg-[url("../assets/images/bg-membresia.jpg")] md:bg-[length:100%_100%] bg-[length:220%_100%] bg-center w-full min-h-screen text-white text-5xl font-bold'>
           <div className="w-full flex flex-col justify-center items-center bg-blue-700/40">
             <h3>Membresía</h3>
             <span className="border border-red-600 w-16 mt-10"></span>

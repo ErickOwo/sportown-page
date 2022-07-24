@@ -14,8 +14,10 @@ function MyApp({ Component, pageProps }) {
         <meta name="description" content="Gimnasio de Quetzaltenango SporTown" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {router.pathname == '/signup' || router.pathname == '/login' ? null : <Header />}
-      <Component {...pageProps} />
+      <div className='flex flex-col'>
+        {router.pathname == '/signup' || router.pathname == '/login' ? null : <Header />}
+        <Component {...pageProps} />
+      </div>
     </ProviderAuth>
   );
 }

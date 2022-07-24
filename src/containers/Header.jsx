@@ -11,7 +11,7 @@ const Header = () => {
   const { user, logOut } = useAuth();
 
   return (
-    <header className='fixed w-full z-30 text-white flex p-3 bg-black/50 select-none'>
+    <header className='fixed w-full z-30 text-white lg:flex hidden p-3 bg-black/50 select-none'>
       <Link href='/'>
         <button className='pl-3'>
           <Image src={ logo } width='100%' height='100%' />
